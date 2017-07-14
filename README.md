@@ -1,6 +1,6 @@
 Flask React
 ===========
-somechange
+
 Introduction
 ------------
 Boilerplate to create a simple web app with Flask and React. Other fontend libraries included Twitter Bootstrap, jQuery, Lodash, Require.js & Font Awesome.
@@ -21,7 +21,8 @@ Installation
 
 * Transform JSX to JS using [React tool](http://facebook.github.io/react/docs/tooling-integration.html#productionizing-precompiled-jsx) for development purpose
 		
-		jsx --watch app/static/jsx app/static/js
+		npm install babel-preset-react
+		babel --presets react ./app/static/jsx --out-dir ./app/static/js
 		
 * Run Flask server
 		
